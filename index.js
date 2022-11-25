@@ -2,7 +2,7 @@ class Compare {
     constructor(left, right) {
         this.leftStr = this.lineStr(left);
         this.rightStr = this.lineStr(right);
-        this.searchLimitNum = Math.abs(this.leftStr.length - this.rightStr.length);
+        this.searchLimitNum = 200;
         this.diff();
     }
     lineStr(str) {

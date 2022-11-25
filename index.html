@@ -5,6 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <style>
+            .result {
+                display: flex;
+            }
+            .result-l,
+            .result-r {
+                width: 50%;
+                height: 700px;
+                overflow: auto;
+            }
+        </style>
     </head>
     <body>
         <textarea class="left" name="" id="left" cols="30" rows="10"></textarea>
@@ -13,9 +24,10 @@
         <div>
             <button class="compare" id="compare">比较</button>
         </div>
-
-        <div class="result-l"></div> 
-        <div class="result-r"></div> 
+        <div class="result">
+            <div class="result-l"></div>
+            <div class="result-r"></div>
+        </div>
     </body>
     <script src="./index.js"></script>
 </html>
